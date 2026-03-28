@@ -36,3 +36,12 @@ vercel --prod
 ```
 
 Selesai — repo sudah siap deploy.
+
+## Troubleshooting Vercel 404
+
+Jika deploy berhasil tapi halaman utama 404, pastikan `vercel.json` memakai urutan routes:
+1) `/api/*` ke function python
+2) `/` ke `/public/index.html`
+3) static file ke `/public/$1`.
+
+Konfigurasi repo ini sudah di-set dengan urutan tersebut.
