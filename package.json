@@ -1,0 +1,10 @@
+{
+  "name": "r-hmt-web-music",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deploy helper for Vercel (static + FastAPI)",
+  "scripts": {
+    "start": "uvicorn api.index:app --host 0.0.0.0 --port 8000",
+    "dev": "uvicorn api.index:app --reload"
+  }
+}

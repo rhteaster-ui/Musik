@@ -45,3 +45,10 @@ Jika deploy berhasil tapi halaman utama 404, pastikan `vercel.json` memakai urut
 3) static file ke `/public/$1`.
 
 Konfigurasi repo ini sudah di-set dengan urutan tersebut.
+
+
+## Catatan untuk deploy dari HP
+
+- **Tidak wajib `npm install`** untuk project ini.
+- Vercel bisa langsung deploy dari GitHub karena frontend berupa file statis + backend Python function.
+- `package.json` disediakan hanya agar deteksi project lebih konsisten di beberapa environment.
