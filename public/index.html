@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>R_hmt ofc | Web Music</title>
+  <meta name="theme-color" content="#10131a" />
+  <link rel="manifest" href="/manifest.json" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <img class="avatar" src="https://res.cloudinary.com/dwiozm4vz/image/upload/v1772959730/ootglrvfmykn6xsto7rq.png" alt="R_hmt profile"/>
+    <div>
+      <p class="eyebrow">R_hmt ofc</p>
+      <h1>Web Music AI</h1>
+    </div>
+    <button id="themeBtn">🎨 Tema</button>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Cari Lagu</h2>
+      <div class="search-row">
+        <input id="searchInput" placeholder="Cari lagu, artis, atau mood..." />
+        <button id="searchBtn">Cari</button>
+      </div>
+      <div id="searchResults" class="list"></div>
+    </section>
+
+    <section class="card">
+      <h2>Rekomendasi Hari Ini</h2>
+      <div id="homeRows"></div>
+    </section>
+
+    <section class="card">
+      <h2>Profil Developer</h2>
+      <p class="muted">Upgrade branding dari sann404 menjadi <b>R_hmt ofc</b> + link sosial lengkap.</p>
+      <div class="links">
+        <a href="https://whatsapp.com/channel/0029VbBjyjlJ93wa6hwSWa0p" target="_blank">WhatsApp Channel: ✧･ﾟ: [𝙍]𝙝𝙢𝙏 | 𝘾𝙤𝙙𝙚⚙️𝘼𝙄 𝙡 :･ﾟ✧</a>
+        <a href="https://www.instagram.com/rahmt_nhw?igsh=MWQwcnB3bTA2ZnVidg==" target="_blank">Instagram @rahmt_nhw</a>
+        <a href="https://www.tiktok.com/@r_hmtofc?_r=1&_t=ZS-94KRfWQjeUu" target="_blank">TikTok @r_hmtofc</a>
+        <a href="https://github.com/rahmat-369" target="_blank">GitHub rahmat-369</a>
+        <a href="https://t.me/rAi_engine" target="_blank">Telegram rAi_engine</a>
+      </div>
+      <button id="copyBtn">Copy semua link profil</button>
+      <p id="copyState" class="muted"></p>
+    </section>
+  </main>
+
+  <div id="player" class="player hidden">
+    <img id="playerImg" alt="cover" />
+    <div>
+      <p id="playerTitle"></p>
+      <small id="playerArtist"></small>
+    </div>
+    <a id="ytLink" target="_blank">Buka YouTube</a>
+  </div>
+
+  <script src="/script.js"></script>
+</body>
+</html>
